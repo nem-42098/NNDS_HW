@@ -1,1 +1,5 @@
-# NNDS_HW
+# Final Project in Neural Networks in Data Science, Summer 2024
+
+This project focussed on applying advanced transfer learning techniques,specifically Low-Rank Adaption technique, using TensorFlow. I used Dair-AI emotion dataset which is made up of english tweets extracted from the twitter. Based on the hashtags in the tweets with some preprocessing the labels were assigned to the tweets. Further *sadness,joy,anger,love,fear,suprise* are the possible emotions aka classes. The following dataset was used in the follwoing paper [CARER:Contextualized Affect Representations for Emotion Recognition](https://aclanthology.org/D18-1404/) .
+
+I used DistilBert Base which is a small, fast, cheap and light Transformer model trained by distilling BERT base.My aim was to utilise the pre-trained powerful general-purpose language representation present in the model and fine-tune for my specifc task aka emotion detection. I placed Lora weights in the Query and Key kernel for the last few layers and also in the final dense-layer.Implementation of LORA was highly motivated from the official tutorial in Keras documentation [LORA in GPT-2](https://keras.io/examples/nlp/parameter_efficient_finetuning_of_gpt2_with_lora/)
